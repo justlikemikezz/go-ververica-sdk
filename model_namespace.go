@@ -10,13 +10,9 @@
 
 package ververica
 
-import (
-	"time"
-)
-
 type Namespace struct {
-	CreateTime time.Time `json:"createTime,omitempty"`
-	LifecyclePhase string `json:"lifecyclePhase,omitempty"`
-	Name string `json:"name,omitempty"`
-	RoleBindings []RoleBinding `json:"roleBindings,omitempty"`
+	CreateTime     string        `json:"createTime,omitempty"`
+	LifecyclePhase string        `json:"lifecyclePhase,omitempty"`
+	Name           string        `json:"name,omitempty"`
+	RoleBindings   []RoleBinding `json:"roleBindings,omitempty"`
 }
